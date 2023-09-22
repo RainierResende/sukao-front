@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>MVP Desenvolvimento Fullstack Básico</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+      <div class="title">
+        <h2>Lista de Produtos</h2>
+      </div>
+      <div class="banner">
+        <img src="/img/sukao_logo.webp" alt="y" />
+      </div>
+    </header>
+
+    <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+      <input
+        type="number"
+        id="newCode"
+        placeholder="Código"
+      />
+      <input type="text" id="newProduct" placeholder="Produto" />
+      <input
+        type="number"
+        id="newPrice"
+        placeholder="Valor"
+      />
+      <input type="text" id="newIngredients" placeholder="Ingredientes separados por vírgula" />
+      <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+      <table id="myTable">
+        <tbody>
+          <tr>
+            <th class="code">Código</th>
+            <th class="product">Produto</th>
+            <th class="price">Valor</th>
+            <th class="delete">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/126/126468.png"
+                width="15px"
+                height="15px"
+              />
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

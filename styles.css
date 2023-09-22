@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+ul,
+li {
+  font-family: tahoma;
+  background-color: #ffe68a;
+}
+
+header {
+  background-color: #ffe68a;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  color: #df0d1c;
+  width: 100%;
+  background-color: #efc032;
+  display: inline-block;
+  padding: 2px 0px;
+  position: sticky;
+  top: 0px;
+}
+
+.banner {
+  height: 200px;
+  overflow: hidden;
+}
+
+.banner img {
+  margin: 0px 0px 0px 0px;
+  width: 20%;
+}
+
+.newItem {
+  background-color: #ffe68a;
+  padding: 30px 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.newItem:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+#newCode {
+  margin: 0;
+  width: 8%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  text-align: center;
+}
+
+#newProduct {
+  margin: 0;
+  width: 10%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+}
+
+#newPrice {
+  margin: 0;
+  width: 5%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+}
+
+#newIngredients {
+  margin: 0;
+  width: 25%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+}
+
+#newCode,
+#newPrice,
+#newProduct,
+#newIngredients {
+  border: 0.5px solid grey;
+}
+
+.addBtn {
+  padding: 9px 10px;
+  background-color: #0050c1;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  filter: 0.3s;
+}
+
+.addBtn:hover {
+  filter: brightness(1.2);
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ingredients {
+  text-align: center;
+  height: 30px;
+  font-size: 16px;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s;
+  height: 20px;
+  font-size: 20px;  
+}
+
+.close:hover {
+  color: #f44336;
+  font-weight: bolder;
+}
+
+.delete {
+  text-align: center;
+  width: 60px;
+}
+
+td,
+th{
+  border: 1px solid grey;
+  text-align: center;
+}
+
+td:first-child, 
+th:first-child {
+  width: 80px;
+}
+
+td {
+  border-top: 1px solid grey;
+  font-size: 16px;
+  height: 30px;
+}
+
+table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  transition: 0.2s;
+  text-align: start;
+  background-color: white;
+  width: 50%;
+}
+
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+tr:hover {
+  background: rgb(200, 199, 199);
+}
